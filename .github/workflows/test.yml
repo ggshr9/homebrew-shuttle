@@ -1,0 +1,25 @@
+name: Test formulae
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Syntax + style audit. Doesn't try to download release artifacts,
+      # so it works before the first upstream release lands.
+      - name: brew test-bot --only-tap-syntax
+        run: brew test-bot --only-tap-syntax
+
+      # Full audit (downloads release tarballs). Disabled until first
+      # upstream `v*` release replaces the placeholder version/sha256.
+      # Re-enable by removing the `if: false` line below once the tap
+      # is bumped from 0.0.0 to a real version.
+      - name: brew test-bot --only-formulae
+        if: false
+        run: brew test-bot --only-formulae
