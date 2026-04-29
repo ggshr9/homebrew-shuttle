@@ -7,17 +7,17 @@
 class Shuttled < Formula
   desc "Multi-transport network toolkit (server)"
   homepage "https://github.com/ggshr9/shuttle"
-  version "0.0.0"
+  version "1.0.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     on_arm do
-      url "https://github.com/ggshr9/shuttle/releases/download/v#{version}/shuttled-darwin-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/ggshr9/shuttle/releases/download/v1.0.0/shuttle-darwin-arm64.tar.gz"
+      sha256 "0446065fc1ee28ae051498ae59d74bf35c5bf68d732bbd5894ed7d5a588ed566"
     end
     on_intel do
-      url "https://github.com/ggshr9/shuttle/releases/download/v#{version}/shuttled-darwin-amd64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/ggshr9/shuttle/releases/download/v1.0.0/shuttle-darwin-amd64.tar.gz"
+      sha256 "4576bf2dfae45057eb8ef7a7c48dee3787867dc30ab698e5e9b23e6676a4a944"
     end
   end
 
