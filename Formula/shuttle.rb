@@ -9,13 +9,13 @@
 class Shuttle < Formula
   desc "Multi-transport network toolkit (CLI client)"
   homepage "https://github.com/ggshr9/shuttle"
-  version "0.0.0"
+  version "1.0.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     on_arm do
-      url "https://github.com/ggshr9/shuttle/releases/download/v#{version}/shuttle-darwin-arm64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      url "https://github.com/ggshr9/shuttle/releases/download/v1.0.0/shuttle-darwin-amd64.tar.gz"
+      sha256 "253b9483e3c03d41698199e431fcbf77d2af53fd218d9ad7823a98e4bd7de941"
     end
     on_intel do
       url "https://github.com/ggshr9/shuttle/releases/download/v#{version}/shuttle-darwin-amd64.tar.gz"
