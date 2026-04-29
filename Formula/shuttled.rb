@@ -13,11 +13,11 @@ class Shuttled < Formula
   on_macos do
     on_arm do
       url "https://github.com/ggshr9/shuttle/releases/download/v1.0.0/shuttle-darwin-arm64.tar.gz"
-      sha256 "0446065fc1ee28ae051498ae59d74bf35c5bf68d732bbd5894ed7d5a588ed566"
+      sha256 "f79babe37e5a023ee22d9e0e117f3d945f25aea31090ed4075d72d07eddbc78c"
     end
     on_intel do
       url "https://github.com/ggshr9/shuttle/releases/download/v1.0.0/shuttle-darwin-amd64.tar.gz"
-      sha256 "4576bf2dfae45057eb8ef7a7c48dee3787867dc30ab698e5e9b23e6676a4a944"
+      sha256 "021c2d24e074bc5724fe90633d9c505ed6c5e8a7b72673e5c09390df16ffabff"
     end
   end
 
